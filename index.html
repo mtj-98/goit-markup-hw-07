@@ -15,7 +15,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./portfolio.html" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/mobile-first-styles.css" />
 
     <title>WebStudio</title>
   </head>
@@ -37,6 +38,11 @@
             <li class="menu-items"><a class="menu-link link" href="">Contacts</a></li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open">
+          <svg class="mobile-menu-icon" width="32" heigth="32">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
         <address class="address address-section">
           <ul class="list address-list">
             <li>
@@ -50,15 +56,15 @@
     <!-- Main Page -->
     <main class="main-page">
       <!-- Hero -->
-      <section class="list hero">
+      <!-- <section class="list hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="button-hero" type="button" data-modal-open>Order Service</button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Goals  -->
-      <section class="list goals-section">
+      <!-- <section class="list goals-section">
         <div class="container">
           <h2 class="title hidden-title">Solutions</h2>
           <ul class="list goals-section-list">
@@ -112,10 +118,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- What are we doing -->
-      <section class="list doing-section">
+      <!-- <section class="list doing-section">
         <div class="container">
           <h2 class="title">What are we doing</h2>
           <ul class="list work-section">
@@ -130,10 +136,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Team -->
-      <section class="team-section">
+      <!-- <section class="team-section">
         <div class="container">
           <h2 class="title">Our Team</h2>
           <ul class="list team">
@@ -293,10 +299,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- CUSTOMERS  -->
-      <section class="customers-section list">
+      <!-- <section class="customers-section list">
         <div class="container">
           <h2 class="title">Customers</h2>
           <ul class="list customers-list">
@@ -332,11 +338,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>  -->
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-section">
         <div class="footer-logo-text">
           <a class="link logotype logo-link" href="./index.html"
@@ -401,10 +407,10 @@
          </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -454,14 +460,14 @@
               placeholder="Text input"
             ></textarea>
           </label>
-          <input id="user_polisy" type="checkbox" name="user_polisy" class="modal-form-check visually-title" />
+          <input id="user_polisy" type="checkbox" name="user_polisy" class="modal-form-check visually-hidden" />
           <label for="user_polisy" class="modal-form-check-dicr">
             I accept the terms and conditions of the&nbsp;<a href="" class="privacy-policy">Privacy Policy</a>
           </label>
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
