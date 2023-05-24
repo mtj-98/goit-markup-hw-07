@@ -15,9 +15,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./portfolio.html" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/mobile-first-styles.css" />
-
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
   <body>
@@ -38,9 +36,9 @@
             <li class="menu-items"><a class="menu-link link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
-          <svg class="mobile-menu-icon" width="32" heigth="32">
-            <use href="./images/icons.svg#icon-menu-burger"></use>
+        <button type="button"  class="mobile-menu-open js-open-menu is-open">
+          <svg class="mobile-menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-person"></use>
           </svg>
         </button>
         <address class="address address-section">
@@ -51,6 +49,71 @@
             <li><a class="link contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+      </div>
+      <!-- Mobile menu -->
+      <div class="container mobile-menu" js-menu-container>
+        <div class="mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn" js-close-menu>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-items">
+              <a class="mobile-menu-link menu-link-studio link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-items">
+              <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-items">
+              <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu-contacts">
+          <address class="mobile-address">
+            <ul class="list mobile-address-list">
+              <li class="mobile-address-items">
+                <a class="link mobile-ver-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li>
+                <a class="link mobile-ver-mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-ver-social-list list">
+            <li class="mobile-ver-social-list-items">
+              <a href="" class="mobile-ver-social-list-link">
+                <svg width="24" height="24" class="mobile-social-list-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-ver-social-list-items">
+              <a href="" class="mobile-ver-social-list-link">
+                <svg width="24" height="24" class="mobile-social-list-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-ver-social-list-items">
+              <a href="" class="mobile-ver-social-list-link">
+                <svg width="24" height="24" class="mobile-social-list-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-ver-social-list-items">
+              <a href="" class="mobile-ver-social-list-link">
+                <svg width="24" height="24" class="mobile-social-list-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main Page -->
@@ -468,6 +531,7 @@
         </form>
       </div>
     </div> -->
+    <script src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
