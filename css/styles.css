@@ -585,15 +585,16 @@ body {
     font-style: normal;
     font-weight: 500;
   }
+  
 }
-
 .goals-section-list {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  gap: 72px;
-  flex-basis: calc((100% - 3 * 24px) / 4);
   margin-bottom: 0;
+}
+.part-list-section {
+  width: 365px;
 }
 
 .goals-title {
@@ -609,11 +610,23 @@ body {
   .goals-section-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
+    gap: 72px 24px;
 }
 }
 
 /* /TABLET COALS */
+
+
+/* .goals-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 72px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  margin-bottom: 0;
+} */
+
+
 
 /* .part-list-section {
     width: 264px;
