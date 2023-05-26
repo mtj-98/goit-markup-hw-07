@@ -81,15 +81,13 @@ body {
   overflow: hidden;
 }
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 426px;
-    padding-left: 16px;
-    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -98,14 +96,14 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -480,6 +478,8 @@ body {
   }
 }
 .hero {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/mobile-pic/bg-img@2x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -567,6 +567,7 @@ body {
 /* MOBILE COALS */
 
 @media screen and (max-width: 1158px) {
+
   .goals-div {
     display: none;
   }
@@ -589,8 +590,8 @@ body {
     font-style: normal;
     font-weight: 500;
   }
-  
 }
+
 .goals-section-list {
   display: flex;
   flex-wrap: wrap;
@@ -614,8 +615,7 @@ body {
 
   .goals-section-list {
     gap: 72px;
-}
-
+  }
 }
 
 /* /MOBILE COALS */
@@ -627,81 +627,109 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
-}
+  }
 }
 
 /* /TABLET COALS */
 
+/* DESKTOP GOALS */
+@media screen and (min-width: 1159px) {
+  .goals-section {
+    padding: 120px 0 120px;
+  }
 
-/* .goals-section-list {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  gap: 72px;
-  flex-basis: calc((100% - 3 * 24px) / 4);
-  margin-bottom: 0;
-} */
+  .goals-section-list {
+    justify-content: space-between;
+  }
 
-
-
-/* .part-list-section {
+  .part-list-section {
     width: 264px;
-  } */
-/* .goals-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  margin-bottom: 8px;
-} */
+  }
 
-/* .goals-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 64px;
-  height: 64px;
-  margin: 24px 100px;
-} */
+  .goals-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+
+  .goals-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    margin: 24px 100px;
+  }
+}
+
+/* /DESKTOP GOALS */
+
+/* ===============/GOALS=============== */
 
 /* ============= WHAT ARE WE DOING============ */
-/* .doing-section {
-  padding-bottom: 120px;
+
+/* MOBILE and TABLET WAWD */
+@media screen and (max-width: 1158px) {
+  .doing-section {
+    display: none;
+  }
 }
 
-.work-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 72px;
+/* /MOBILE and TABLET WAWD */
+@media screen and (min-width: 1159px) {
+  .doing-section {
+    padding-bottom: 120px;
+  }
 }
 
-.work-card {
+/* DESKTOP  WAWD */
+@media screen and (min-width: 1159px) {
+  .doing-section {
+    padding-bottom: 120px;
+  }
+
+  .work-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 72px;
+  }
+
+  /* .work-card {
   flex-basis: calc((100% - 3 * 24px) / 4);
+} */
+
+  .work-card:not(:nth-child(3n)) {
+    margin-right: 24px;
+  }
 }
 
-.work-card:not(:nth-child(3n)) {
-  margin-right: 24px;
-} */
+/* /DESKTOP  WAWD */
+/* ============= /WHAT ARE WE DOING============ */
 
 /* ==================TEAM==================== */
 
-/* .team-section {
-  background: #f4f4fd;
-  padding: 120px 0;
-}
+/* MOBILE TEAM */
+@media screen and (max-width: 767px) {
+  .team-section {
+    background: #f4f4fd;
+    padding: 96px 0;
+  }
 
-.team {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 24px;
-  background-color: #f4f4fd;
-  margin-top: 72px;
+  .team {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 72px 24px;
+    background-color: #f4f4fd;
+    margin-top: 72px;
+  }
 }
 
 .bio-card {
@@ -752,7 +780,57 @@ body {
 
 .social-list-icon {
   fill: var(--primary-button-filter-bg);
-} */
+}
+
+/* MOBILE TEAM */
+
+/* TABLET TEAM */
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .team-section {
+    background: #f4f4fd;
+    padding: 96px 0;
+  }
+
+.container-team {
+    padding-left: 108px;
+    padding-right: 108px;
+
+}
+
+  .team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 64px 24px;
+    background-color: #f4f4fd;
+    margin-top: 72px;
+  }
+}
+
+/* /TABLET TEAM */
+
+/* DESKTOP TEAM */
+@media screen and (min-width: 1159px) {
+  .team-section {
+    background: #f4f4fd;
+    padding: 120px 0;
+  }
+
+  .team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 64px 24px;
+    background-color: #f4f4fd;
+    margin-top: 72px;
+  }
+}
+
+/* /DESKTOP TEAM */
+/* ==================/TEAM==================== */
+
 
 /* ==================CUSTOMERS============== */
 /* .customers-section {
