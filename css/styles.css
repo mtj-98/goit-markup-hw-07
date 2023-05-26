@@ -87,7 +87,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 426px;
+    width: 428px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -159,6 +159,10 @@ body {
   color: #f4f4fd;
 }
 /* ===============/LOGO=============== */
+
+
+
+
 
 /* ===============HEADER - Navigation end contacts=============== */
 
@@ -464,6 +468,8 @@ body {
 
 
 
+
+
 /* ===============MAIN PAGE=============== */
 
 /* ===============HERO=============== */
@@ -567,7 +573,6 @@ body {
 /* MOBILE COALS */
 
 @media screen and (max-width: 1158px) {
-
   .goals-div {
     display: none;
   }
@@ -791,11 +796,10 @@ body {
     padding: 96px 0;
   }
 
-.container-team {
+  .container-team {
     padding-left: 108px;
     padding-right: 108px;
-
-}
+  }
 
   .team {
     display: flex;
@@ -831,45 +835,80 @@ body {
 /* /DESKTOP TEAM */
 /* ==================/TEAM==================== */
 
-
 /* ==================CUSTOMERS============== */
-/* .customers-section {
-  padding: 120px 0 120px;
+
+/* MOBILE CUSTOMERS */
+@media screen and (max-width: 767px) {
+  .customers-section {
+    padding: 96px 0;
+  }
+
 }
 
 .customers-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 72px 16px;
+    margin-top: 72px;
+  }
+
+  .customers-list-link {
+    height: 100%;
+    padding: 16px 32px;
+    color: var(--icom-primary-color);
+    width: calc((100% - 120px) / 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--icom-primary-color);
+    border-radius: 4px;
+    transition: border-color var(--transition-dur-and-fun), color var(--transition-dur-and-fun);
+  }
+
+  .customers-list-link:hover,
+  .customers-list-link:focus {
+    color: var(--batton-hover-bg);
+    border-color: var(--batton-hover-bg);
+  }
+
+  .customers-list-icon {
+    fill: currentColor;
+  }
+/* /MOBILE CUSTOMERS */
+
+/* TABLET CUSTOMERS */
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .customers-section {
+    padding: 96px 0;
+  }
+
+  .customers-list {
+    gap: 72px 24px;
+  }
 }
 
-.customers-list-link {
-  height: 100%;
-  padding: 16px 32px;
-  color: var(--icom-primary-color);
-  width: calc((100% - 120px) / 6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 168px;
-  height: 88px;
-  border: 1px solid var(--icom-primary-color);
-  border-radius: 4px;
-  transition: border-color var(--transition-dur-and-fun), color var(--transition-dur-and-fun);
+/* /TABLET CUSTOMERS */
+
+/* DESKTOP CUSTOMERS */
+/* DESKTOP TEAM */
+@media screen and (min-width: 1159px) {
+  .customers-section {
+    padding: 120px 0 120px;
+  }
 }
 
-.customers-list-link:hover,
-.customers-list-link:focus {
-  color: var(--batton-hover-bg);
-  border-color: var(--batton-hover-bg);
-}
-
-.customers-list-icon {
-  fill: currentColor;
-} */
-
+/* /DESKTOP CUSTOMERS */
+/* ==================/CUSTOMERS============== */
 /* ===============/MAIN PAGE=============== */
+
+
+
+
+
+
 
 /* ===============FOOTER=============== */
 /* .footer {
@@ -1146,7 +1185,7 @@ body {
 
 /* ==================MODAL WINDOW==================== */
 
-/* .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1203,13 +1242,13 @@ body {
 
 .modal-close-btn-icon {
   transition: fill var(--transition-dur-and-fun);
-} */
+}
 
 /* ==================/MODAL WINDOW==================== */
 
 /* ==================MODAL FORM==================== */
 
-/* .leave-your-contacts {
+.leave-your-contacts {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -1357,5 +1396,5 @@ body {
 .modal-form-submit:hover,
 .modal-form-submit:focus {
   background-color: var(--batton-hover-bg);
-} */
+}
 /* ==================/MODAL FORM==================== */
