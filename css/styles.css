@@ -1050,7 +1050,7 @@ body {
 
 
 
-/* 
+
 
 
 
@@ -1062,7 +1062,7 @@ body {
   color: #f4f4fd;
 }
   .footer-form-dicr {
-    /* display: flex;
+   display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1139,7 +1139,9 @@ body {
 .footer-btn-subscribe:hover,
 .footer-btn-subscribe:focus {
   background-color: var(--batton-hover-bg);
-} */
+}
+
+
 /* ===============/FOOTER=============== */
 
 /* ==============PORTFOLIO============== */
