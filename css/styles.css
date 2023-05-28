@@ -1054,7 +1054,7 @@ body {
 
 
 
-.discription-text-footer {
+/* .discription-text-footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -1139,7 +1139,7 @@ body {
 .footer-btn-subscribe:hover,
 .footer-btn-subscribe:focus {
   background-color: var(--batton-hover-bg);
-}
+} */
 
 
 /* ===============/FOOTER=============== */
