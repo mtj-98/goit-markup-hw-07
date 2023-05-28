@@ -181,7 +181,7 @@ body {
 }
 
 @media screen and (min-width: 767px) {
-  .mobile-menu-open {
+  .menu-toggle {
     display: none;
   }
 }
@@ -257,6 +257,12 @@ body {
   background-color: var(--batton-hover-bg);
   border: none;
   fill: #ffffff;
+}
+
+.menu-div-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .mobile-menu-icon {
@@ -927,8 +933,6 @@ body {
   }
 
   .footer-form-subscribe {
-    width: 392px;
-    height: 136px;
     margin-top: 82px;
   }
 
@@ -951,8 +955,6 @@ body {
   }
 
   .footer-social-media {
-    width: 392px;
-    height: 80px;
     margin-top: 72px;
   }
 
@@ -992,8 +994,6 @@ body {
   }
 
   .email-input-place {
-    min-width: 320px;
-    height: 46px;
     background: transparent;
     border: 1px solid #ffffff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1005,6 +1005,7 @@ body {
     line-height: 2;
     letter-spacing: 0.04em;
     color: rgb(255, 255, 255);
+    width: 100%;
   }
 
   .email-input-place::placeholder {
