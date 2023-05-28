@@ -991,8 +991,9 @@ body {
     fill: var(--primary-button-filter-bg);
   }
 
+
   .email-input-place {
-    min-width: 392px;
+    min-width: 360px;
     height: 46px;
     background: transparent;
     border: 1px solid #ffffff;
