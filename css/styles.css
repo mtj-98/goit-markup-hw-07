@@ -1108,16 +1108,15 @@ margin-bottom: 0;
 
 /* /DESKTOP FOOTER */
 
-
-
-
-
-
 /* ===============/FOOTER=============== */
+
+
+
+
 
 /* ==============PORTFOLIO============== */
 
-/* .portfolio-section {
+.portfolio-section {
   padding: 96px 0 120px;
 }
 
@@ -1299,7 +1298,7 @@ margin-bottom: 0;
 .menu-card-link:hover .overlay-portfolio,
 .menu-card-link:focus .overlay-portfolio {
   transform: translate(0, 0);
-} */
+}
 
 /* ==================MODAL WINDOW==================== */
 
