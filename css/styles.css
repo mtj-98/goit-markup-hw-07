@@ -192,7 +192,7 @@ body {
   justify-content: space-between;
 }
 
-.mobile-menu-open {
+.menu-toggle {
   background: transparent;
   border: none;
   padding: 0;
