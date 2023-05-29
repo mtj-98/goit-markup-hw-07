@@ -99,7 +99,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1157px) {
   .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -117,7 +117,7 @@ body {
 
 .discription-text {
   display: flex;
-  align-items: center;
+  text-align: left;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -260,12 +260,6 @@ body {
   fill: #ffffff;
 }
 
-.menu-div-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .mobile-menu-icon {
   transition: fill var(--color-title);
 }
@@ -396,13 +390,10 @@ body {
     width: 100%;
     height: 4px;
     left: 0;
-    bottom: -1px;
+    bottom: -9px;
     border-radius: 2px;
   }
 
-  .page-header-container {
-    padding: 24px 15px;
-  }
 
   .page-header {
     border-bottom: 1px solid #e7e9fc;
@@ -429,7 +420,7 @@ body {
   .contacts {
     align-items: center;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -448,21 +439,34 @@ body {
     margin-bottom: 0;
   }
 
-  .address-section {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+  .address {
+    padding: 16px 0;;
   }
 }
 /* /TABLET HEADER */
 
 /* DESKTOP HEADER */
 @media screen and (min-width: 1158px) {
+  .page-header {
+    padding: 24px 0;
+  }
+
   .address-list {
     flex-direction: row;
     gap: 40px;
     margin-bottom: 0;
   }
+  
+  .contacts {
+    font-size: 16px;
+  }
+.address {
+  padding: 0;
+}
+
+.stick::after {
+  bottom: -3px;
+}
 }
 /* /DESKTOP HEADER */
 
@@ -552,7 +556,7 @@ body {
 /* /TABLET HERO */
 
 /* /DESKTOP HERO */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1157px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/people-office.jpg');
@@ -570,7 +574,7 @@ body {
 
 /* MOBILE COALS */
 
-@media screen and (max-width: 1158px) {
+@media screen and (max-width: 1157px) {
   .goals-div {
     display: none;
   }
@@ -583,7 +587,7 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-title);
@@ -607,7 +611,6 @@ body {
 }
 
 .goals-title {
-  margin-top: 8px;
   margin-bottom: 8px;
 }
 
@@ -636,7 +639,7 @@ body {
 /* /TABLET COALS */
 
 /* DESKTOP GOALS */
-@media screen and (min-width: 1159px) {
+@media screen and (min-width: 1157px) {
   .goals-section {
     padding: 120px 0 120px;
   }
@@ -660,6 +663,7 @@ body {
     margin-bottom: 8px;
   }
 
+  
   .goals-icon {
     display: flex;
     justify-content: center;
@@ -788,7 +792,7 @@ body {
 /* MOBILE TEAM */
 
 /* TABLET TEAM */
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .team-section {
     background: #f4f4fd;
     padding: 96px 0;
@@ -813,7 +817,7 @@ body {
 /* /TABLET TEAM */
 
 /* DESKTOP TEAM */
-@media screen and (min-width: 1159px) {
+@media screen and (min-width: 1157px) {
   .team-section {
     background: #f4f4fd;
     padding: 120px 0;
@@ -836,11 +840,6 @@ body {
 /* ==================CUSTOMERS============== */
 
 /* MOBILE CUSTOMERS */
-@media screen and (max-width: 767px) {
-  .customers-section {
-    padding: 96px 0;
-  }
-}
 
 .customers-list {
   display: flex;
@@ -851,10 +850,8 @@ body {
 }
 
 .customers-list-link {
-  height: 100%;
   padding: 16px 32px;
   color: var(--icom-primary-color);
-  width: calc((100% - 120px) / 6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -874,10 +871,20 @@ body {
 .customers-list-icon {
   fill: currentColor;
 }
+
+@media screen and (max-width: 767px) {
+  .customers-section {
+    padding: 96px 0;
+  }
+
+  .customers-list-link {
+    width: 190px;
+  }
+}
 /* /MOBILE CUSTOMERS */
 
 /* TABLET CUSTOMERS */
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .customers-section {
     padding: 96px 0;
   }
@@ -891,7 +898,7 @@ body {
 
 /* DESKTOP CUSTOMERS */
 /* DESKTOP TEAM */
-@media screen and (min-width: 1159px) {
+@media screen and (min-width: 1157px) {
   .customers-section {
     padding: 120px 0 120px;
   }
@@ -1014,10 +1021,10 @@ body {
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 12px;
+  width: 264px;
   line-height: 2;
   letter-spacing: 0.04em;
   color: rgb(255, 255, 255);
-  min-width: 320px;
 }
 
 .email-input-place::placeholder {
@@ -1027,6 +1034,13 @@ body {
   letter-spacing: 0.04em;
   color: rgb(255, 255, 255, 0, 0.5);
 }
+
+@media screen and (min-width: 428px) and (max-width: 767px) {
+  .email-input-place {
+    width: 398px;
+  }
+}
+
 
 .footer-btn-subscribe {
   font-family: 'Roboto', sans-serif;
@@ -1058,7 +1072,7 @@ body {
 }
 
 /* TABLET FOOTER */
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-section {
     display: flex;
     align-items: flex-start;
@@ -1082,7 +1096,7 @@ body {
 
 /* DESKTOP FOOTER */
 
-@media screen and (min-width: 1159px) {
+@media screen and (min-width: 1157px) {
   .discription-text-footer {
     font-weight: 400;
     font-size: 16px;
@@ -1328,13 +1342,14 @@ body {
   pointer-events: none;
 }
 
+
 .modal-window {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 320px;
-  min-height: 584px;
+  width: 408px;
+  height: 584px;
   padding: 72px 24px 24px 24px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -1342,6 +1357,23 @@ body {
   border-radius: 4px;
   transition: transform var(--transition-dur-and-fun);
 }
+
+/* MOBILE MODAL WINDOW */
+@media screen and (max-width: 767px) {
+  .modal-window {
+    width: 392px;
+    height: 584px;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .modal-window {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* /MOBILE MODAL WINDOW */
 
 .modal-close-btn {
   position: absolute;
